@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.formouter{
+  position: relative;
+}
+.formouter::after{
+  position: absolute;
+  content: '';
+  width: 150%;
+  height: 150%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  background-image: url('/public/download.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
